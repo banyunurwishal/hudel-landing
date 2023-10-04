@@ -1,6 +1,6 @@
 <template>
   <div class="legal-wrapper">
-    <b-row style="margin-top: 90px; margin-bottom: 90px">
+    <b-row style="margin-top: 110px; margin-bottom: 110px">
       <b-col class="text-center">
         <div style="margin-bottom: 62px" class="text-white">
           <span style="font-size: 83px">Legal</span><br />
