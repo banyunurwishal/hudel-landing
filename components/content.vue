@@ -7,36 +7,55 @@
       <b-col align-self="center">
         <div style="font-size: 57px; margin-bottom: 44px">
           <div class="d-flex flex-row">
-            <div class="mr-sm-3 text-white">Find</div>
-            <div class="word-container">
-              <div
-                v-for="(item, index) in items"
-                :key="index"
-                class="animate__infinite animate__animated"
-                :class="{
-                  animated: item.animate,
-                  animate__slideInUp: item.animate,
-                  animate__slideOutUp: !item.animate,
-                }"
-                :style="{ color: item.color }"
-                @animationend="animationEnd(index)"
-                v-show="item.visible"
-              >
-                {{ item.content }}
+            <div class="scrolling-words-container">
+              <span class="text-white">Find</span>
+              <div class="scrolling-words-box">
+                <ul v-if="scroll1">
+                  <li style="color: transparent">Athletics</li>
+                  <li style="color: #ea4335">Athletics</li>
+                  <li style="color: #4285f4">Basketball Pick-Up</li>
+                  <li style="color: #4285f4">Crew</li>
+                  <li style="color: #34a853">Soccer Fanatics</li>
+                  <li style="color: #fbbc04">Martial Arts Meetup</li>
+                  <li style="color: #4285f4">Badminton Club</li>
+                </ul>
+                <ul v-if="scroll2">
+                  <li style="color: transparent">Athletics</li>
+                  <li style="color: #ea4335">Academics</li>
+                  <li style="color: #4285f4">Study Buddies</li>
+                  <li style="color: #34a853">Startup Enthusiasts</li>
+                  <li style="color: #fbbc04">Course Explorers</li>
+                  <li style="color: #4285f4">Physics Study</li>
+                  <li style="color: #4285f4">Groups</li>
+                </ul>
+                <ul v-if="scroll3">
+                  <li style="color: transparent">Athletics</li>
+                  <li style="color: #ea4335">Cultural</li>
+                  <li style="color: #4285f4">International</li>
+                  <li style="color: #4285f4">Students Community</li>
+                  <li style="color: #34a853">Housing Community</li>
+                  <li style="color: #fbbc04">Arts & Creativity</li>
+                  <li style="color: #4285f4">Kpop Enthusiasts</li>
+                </ul>
+                <ul v-if="scroll4">
+                  <li style="color: transparent">Athletics</li>
+                  <li style="color: #ea4335">Dance Groups</li>
+                  <li style="color: #4285f4">Fun Groups</li>
+                  <li style="color: #34a853">Gaming Enthusiasts</li>
+                  <li style="color: #fbbc04">Movie Buffs</li>
+                  <li style="color: #4285f4">Foodie Adventures</li>
+                  <li style="color: #ea4335">Travel Explorers</li>
+                </ul>
+                <ul v-if="scroll5">
+                  <li style="color: transparent">Athletics</li>
+                  <li style="color: #4285f4">Board Game Nights</li>
+                  <li style="color: #34a853">Dating Adventures</li>
+                  <li style="color: #fbbc04">Fellow Commuters</li>
+                  <li style="color: #4285f4">Class Groups</li>
+                </ul>
               </div>
             </div>
-            <!-- <div class="animate__animated animate__delay-3s animate__slideInUp">
-              Soccer Fanatics
-            </div> -->
           </div>
-          <!-- <div class="scroller">
-            <span>
-              Cool<br />
-              Art<br />
-              Intruiging<br />
-              Challenging
-            </span>
-          </div> -->
           <span class="text-white">in your School!</span>
         </div>
         <div style="margin-bottom: 44px">
@@ -269,114 +288,97 @@ export default {
   name: "content",
   data() {
     return {
-      items: [
-        {
-          content: "Soccer Fanatics",
-          animate: false,
-          visible: false,
-          color: "linear-gradient(180deg, #12083a 0%, #241853 100%);",
-        },
-        { content: "Startup Enthusiast", animate: false, visible: false },
-        {
-          content: "Housing Community",
-          animate: false,
-          visible: false,
-          color: "linear-gradient(180deg, #12083a 0%, #241853 100%);",
-        },
-        {
-          content: "Kpop Enthusiast",
-          animate: false,
-          visible: false,
-          color: "linear-gradient(180deg, #12083a 0%, #241853 100%);",
-        },
-        {
-          content: "Movie Buffs",
-          animate: false,
-          visible: false,
-          color: "linear-gradient(180deg, #12083a 0%, #241853 100%);",
-        },
-        // Add more elements as needed
-      ],
-      currentIndex: 0,
+      scroll1: false,
+      scroll2: false,
+      scroll3: false,
+      scroll4: false,
+      scroll5: false,
     };
   },
-  created() {
-    this.startScrolling();
+  async created() {
+    await this.handleScroll();
   },
+  computed: {},
   methods: {
-    startScrolling() {
-      // Reset animation and visibility for all items
-      this.items.forEach((item) => {
-        item.animate = false;
-        item.visible = false;
-      });
-
-      // Start the animation for the current element
-      const currentItem = this.items[this.currentIndex];
-      currentItem.animate = true;
-      currentItem.visible = true;
-
-      // Move to the next element after a delay
-      setTimeout(() => {
-        currentItem.animate = false;
-        currentItem.visible = false;
-
-        // Increment currentIndex and loop back to the first element if necessary
-        this.currentIndex = (this.currentIndex + 1) % this.items.length;
-        const nextItem = this.items[this.currentIndex];
-        nextItem.animate = true;
-        nextItem.visible = true;
-      }, 3000); // Adjust the delay as needed
+    handleScroll() {
+      this.scroll1 = true;
+      setTimeout(async () => {
+        this.scroll1 = false;
+        await this.handleScroll2();
+      }, 10000);
     },
-    animationEnd(index) {
-      // This method will be called when the slideOutLeft animation ends for an item
-      // You can perform any necessary actions here
-      console.log(`Animation for Element ${index + 1} ended`);
+    handleScroll2() {
+      this.scroll2 = true;
+      setTimeout(async () => {
+        this.scroll2 = false;
+        await this.handleScroll3();
+      }, 10000);
+    },
+    handleScroll3() {
+      this.scroll3 = true;
+      setTimeout(async () => {
+        this.scroll3 = false;
+        await this.handleScroll4();
+      }, 10000);
+    },
+    handleScroll4() {
+      this.scroll4 = true;
+      setTimeout(async () => {
+        this.scroll4 = false;
+        await this.handleScroll();
+      }, 10000);
     },
   },
 };
 </script>
 
 <style>
-.animated {
-  animation-duration: 2s;
+.scrolling-words-container {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
 }
-.word-container {
-  position: relative;
+.scrolling-words-box {
+  height: 5rem;
+  margin: auto;
   overflow: hidden;
 }
-
-/* Scroller styling */
-.scroller {
-  height: 1.2em;
-  line-height: 1.2em;
-  position: relative;
-  overflow: hidden;
-  width: 10em;
+.scrolling-words-box ul {
+  margin: 0 0.625rem;
+  padding: 0;
+  animation: scrollUp 10s infinite;
 }
-.scroller > span {
-  position: absolute;
-  top: 0;
-  animation: slide 5s infinite;
-  font-weight: bold;
+.scrolling-words-box ul li {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  list-style: none;
 }
 
-@keyframes slide {
-  0% {
-    top: 0;
-    animation-duration: 20s;
+@keyframes scrollUp {
+  7%,
+  17% {
+    transform: translateY(-14.2857142857%);
   }
-  25% {
-    top: -1.2em;
-    animation-delay: 10s;
+  24%,
+  34% {
+    transform: translateY(-28.5714285714%);
   }
-  50% {
-    top: -2.4em;
-    animation-delay: 10s;
+  41%,
+  51% {
+    transform: translateY(-42.8571428571%);
   }
-  75% {
-    top: -3.6em;
-    animation-delay: 10s;
+  58%,
+  68% {
+    transform: translateY(-57.1428571429%);
+  }
+  75%,
+  85% {
+    transform: translateY(-71.4285714286%);
+  }
+  92%,
+  100% {
+    transform: translateY(-85.7142857143%);
   }
 }
 </style>
