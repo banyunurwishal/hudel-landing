@@ -1,36 +1,34 @@
 <template>
   <div class="legal-wrapper">
-    <b-row style="margin-top: 110px; margin-bottom: 110px">
+    <b-row class="space-legal-top">
       <b-col class="text-center">
-        <div style="margin-bottom: 62px" class="text-white">
-          <span style="font-size: 83px">Legal</span><br />
-          <span style="font-size: 25px"
+        <div class="text-white space-legal-mid">
+          <span class="text-legal">Legal</span><br />
+          <span class="desc-legal"
             >Find clarity on our policies and terms by navigating through our
             legal section.</span
           >
         </div>
-        <div
-          class="my-2"
-          style="color: #170d41; font-family: 'Inter', sans-serif"
-        >
-          <button class="p-2 btn btn-light mr-sm-2" style="width: 30%">
-            <b>Terms and Conditions</b>
-          </button>
-          <button class="p-2 btn btn-light" style="width: 30%">
-            <b>Privacy Policy</b>
-          </button>
-        </div>
-        <div
-          class="my-2"
-          style="color: #170d41; font-family: 'Inter', sans-serif"
-        >
-          <button class="p-2 btn btn-light mr-sm-2" style="width: 30%">
-            <b>Disclaimer</b>
-          </button>
-          <button class="p-2 btn btn-light" style="width: 30%">
-            <b>Community Guidelines</b>
-          </button>
-        </div>
+        <b-row class="my-2">
+          <b-col class="my-2">
+            <button class="btn btn-block text-button">
+              Terms and Conditions
+            </button>
+          </b-col>
+          <b-col class="my-2">
+            <button class="btn btn-block text-button">Privacy Policy</button>
+          </b-col>
+        </b-row>
+        <b-row class="my-2">
+          <b-col class="my-2">
+            <button class="btn btn-block text-button">Disclaimer</button>
+          </b-col>
+          <b-col class="my-2">
+            <button class="btn btn-block text-button">
+              Community Guidelines
+            </button>
+          </b-col>
+        </b-row>
       </b-col>
     </b-row>
   </div>
@@ -40,5 +38,65 @@
 .legal-wrapper {
   margin-left: 535px;
   margin-right: 535px;
+}
+
+.space-legal-top {
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+.space-legal-mid {
+  margin-bottom: 62px;
+}
+
+.text-legal {
+  font-size: 83px;
+  font-weight: 700;
+}
+.desc-legal {
+  font-size: 25px;
+}
+
+.text-button {
+  font-size: 25px;
+  font-weight: 500;
+  color: #170d41;
+  background: #eaeaea;
+  padding: 20px;
+  border-radius: 23.6px;
+  gap: 7.87px;
+}
+
+@media only screen and (max-width: 430px) {
+  .legal-wrapper {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .space-legal-top {
+    margin-top: 200px;
+    margin-bottom: 200px;
+  }
+
+  .text-button {
+    font-size: 16px;
+    font-weight: 500;
+    color: #170d41;
+    background: #eaeaea;
+    padding: 15px;
+    border-radius: 23.6px;
+    gap: 7.87px;
+  }
+
+  .space-legal-mid {
+    margin-bottom: 32px;
+  }
+
+  .text-legal {
+    font-size: 32px;
+  }
+  .desc-legal {
+    font-size: 16px;
+  }
 }
 </style>

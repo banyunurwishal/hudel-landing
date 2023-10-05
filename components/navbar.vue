@@ -1,19 +1,15 @@
 <template>
   <b-navbar toggleable="lg" type="dark">
-    <b-navbar-brand href="#">
+    <b-navbar-brand>
       <a
-        class="navbar-brand pointer"
+        class="navbar-brand pointer text-navbar"
         @click="handleChangePage('/')"
-        style="font-size: 33px; font-family: 'Inter', sans-serif"
       >
         <img
           src="@/assets/img/logo.jpeg"
           class="d-inline-block align-top rounded-pill style-logo"
-          height="54"
-          width="54"
-          alt=""
         />
-        <span class="align-middle"><b>Hudel</b></span>
+        <span class="align-middle ml-2"><b>Hudel</b></span>
       </a>
     </b-navbar-brand>
 
@@ -26,7 +22,9 @@
           <li class="pointer" @click="handleChangePage('/')">
             <a
               :style="
-                this.$route.path == '/' ? 'color:#430BFF !important;' : ''
+                this.$route.path == '/'
+                  ? 'color:#430BFF !important;font-weight: bold;'
+                  : ''
               "
               class="text-decoration-none text-light px-3 text-list"
               >Home</a
@@ -35,7 +33,9 @@
           <li class="pointer" @click="handleChangePage('/legal')">
             <a
               :style="
-                this.$route.path == '/legal' ? 'color:#430BFF !important;' : ''
+                this.$route.path == '/legal'
+                  ? 'color:#430BFF !important;font-weight: bold;'
+                  : ''
               "
               class="text-decoration-none text-light px-3 text-list"
               >Legal</a
@@ -44,7 +44,9 @@
           <li class="pointer" @click="handleChangePage('/blog')">
             <a
               :style="
-                this.$route.path == '/blog' ? 'color:#430BFF !important;' : ''
+                this.$route.path == '/blog'
+                  ? 'color:#430BFF !important;font-weight: bold;'
+                  : ''
               "
               class="text-decoration-none text-light px-3 text-list"
               >Blog</a
@@ -54,7 +56,7 @@
             <a
               :style="
                 this.$route.path == '/community'
-                  ? 'color:#430BFF !important;'
+                  ? 'color:#430BFF !important;font-weight: bold;'
                   : ''
               "
               class="text-decoration-none text-light px-3 text-list"
@@ -108,9 +110,78 @@ ul.horizontal-list li {
 
   box-shadow: -2.8081631660461426px 4.212244987487793px 9.126530647277832px 0px
     rgba(0, 0, 0, 0.25);
+  width: 54px;
+  height: 54px;
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1440px) {
+.text-navbar {
+  font-size: 33px;
+  font-family: "Inter", sans-serif;
+}
+
+@media only screen and (min-width: 768px) {
+  /* Style for the horizontal ul */
+  ul.horizontal-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Hide overflowing content */
+  }
+
+  /* Style for the list items (li) */
+  ul.horizontal-list li {
+    float: left; /* Float the list items to make them horizontal */
+    margin-right: 10px; /* Add some spacing between list items */
+  }
+}
+@media only screen and (max-width: 500px) {
+  .style-logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  .text-navbar {
+    font-size: 32px;
+  }
+
+  ul.horizontal-list {
+    list-style-type: none;
+    overflow: visible;
+  }
+
+  /* Style for the list items (li) */
+  ul.horizontal-list li {
+    float: none;
+    text-align: center;
+  }
+
+  .text-list {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .style-logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  .text-navbar {
+    font-size: 32px;
+  }
+
+  ul.horizontal-list {
+    margin-bottom: 8px;
+  }
+
+  /* Style for the list items (li) */
+  ul.horizontal-list li {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  .text-list {
+    font-size: 24px;
+  }
 }
 </style>
