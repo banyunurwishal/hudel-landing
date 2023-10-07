@@ -3,6 +3,7 @@
     <b-row class="text-center" style="margin-bottom: 60px" align-h="center">
       <b-col class="width-footer" sm="1">
         <a
+          @click="handleChangePage('/')"
           :style="
             this.$route.path == '/'
               ? 'color:#430BFF !important;font-weight: bold;'
@@ -14,6 +15,7 @@
       </b-col>
       <b-col class="width-footer" sm="1">
         <a
+          @click="handleChangePage('/legal')"
           :style="
             this.$route.path == '/legal'
               ? 'color:#430BFF !important;font-weight: bold;'
@@ -25,6 +27,7 @@
       </b-col>
       <b-col class="width-footer" sm="1">
         <a
+          @click="handleChangePage('/blog')"
           :style="
             this.$route.path == '/blog'
               ? 'color:#430BFF !important;font-weight: bold;'
@@ -36,6 +39,7 @@
       >
       <b-col class="width-footer" sm="1">
         <a
+          @click="handleChangePage('/community')"
           :style="
             this.$route.path == '/community'
               ? 'color:#430BFF !important;font-weight: bold;'
@@ -97,6 +101,11 @@
 <script>
 export default {
   name: "footer",
+  methods: {
+    handleChangePage(path) {
+      this.$router.push(path);
+    },
+  },
 };
 </script>
 

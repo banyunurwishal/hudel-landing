@@ -14,48 +14,48 @@
                 <div class="scrolling-words-box">
                   <ul v-if="scroll1">
                     <li style="color: transparent">Athletics</li>
-                    <li style="color: #ea4335">Athletics</li>
-                    <li style="color: #4285f4">Basketball Pick-Up</li>
-                    <li style="color: #4285f4">Crew</li>
-                    <li style="color: #34a853">Soccer Fanatics</li>
-                    <li style="color: #fbbc04">Martial Arts Meetup</li>
-                    <li style="color: #4285f4">Badminton Club</li>
+                    <li class="gradient-text-green">Athletics</li>
+                    <li class="gradient-text-blue">Basketball Pick-Up</li>
+                    <li class="gradient-text-blue">Crew</li>
+                    <li class="gradient-text-yellow">Soccer Fanatics</li>
+                    <li class="gradient-text-purple">Martial Arts Meetup</li>
+                    <li class="gradient-text-red">Badminton Club</li>
                   </ul>
                   <ul v-if="scroll2">
                     <li style="color: transparent">Athletics</li>
-                    <li style="color: #ea4335">Academics</li>
-                    <li style="color: #4285f4">Study Buddies</li>
-                    <li style="color: #34a853">Startup Enthusiasts</li>
-                    <li style="color: #fbbc04">Course Explorers</li>
-                    <li style="color: #4285f4">Physics Study</li>
-                    <li style="color: #4285f4">Groups</li>
+                    <li class="gradient-text-green">Academics</li>
+                    <li class="gradient-text-blue">Study Buddies</li>
+                    <li class="gradient-text-yellow">Startup Enthusiasts</li>
+                    <li class="gradient-text-purple">Course Explorers</li>
+                    <li class="gradient-text-red">Physics Study</li>
+                    <li class="gradient-text-red">Groups</li>
                   </ul>
                   <ul v-if="scroll3">
                     <li style="color: transparent">Athletics</li>
-                    <li style="color: #ea4335">Cultural</li>
-                    <li style="color: #4285f4">International</li>
-                    <li style="color: #4285f4">Students Community</li>
-                    <li style="color: #34a853">Housing Community</li>
-                    <li style="color: #fbbc04">Arts & Creativity</li>
-                    <li style="color: #4285f4">Kpop Enthusiasts</li>
+                    <li class="gradient-text-green">Cultural</li>
+                    <li class="gradient-text-blue">International</li>
+                    <li class="gradient-text-blue">Students Community</li>
+                    <li class="gradient-text-yellow">Housing Community</li>
+                    <li class="gradient-text-purple">Arts & Creativity</li>
+                    <li class="gradient-text-red">Kpop Enthusiasts</li>
                   </ul>
                   <ul v-if="scroll4">
                     <li style="color: transparent">Athletics</li>
-                    <li style="color: #ea4335">Dance Groups</li>
-                    <li style="color: #4285f4">Fun Groups</li>
-                    <li style="color: #34a853">Gaming Enthusiasts</li>
-                    <li style="color: #fbbc04">Movie Buffs</li>
-                    <li style="color: #4285f4">Foodie Adventures</li>
-                    <li style="color: #ea4335">Travel Explorers</li>
+                    <li class="gradient-text-green">Dance Groups</li>
+                    <li class="gradient-text-blue">Fun Groups</li>
+                    <li class="gradient-text-yellow">Gaming Enthusiasts</li>
+                    <li class="gradient-text-purple">Movie Buffs</li>
+                    <li class="gradient-text-red">Foodie Adventures</li>
+                    <li class="gradient-text-yellow">Travel Explorers</li>
                   </ul>
                   <ul v-if="scroll5">
                     <li style="color: transparent">Athletics</li>
-                    <li style="color: #4285f4">Board Game Nights</li>
-                    <li style="color: #34a853">Dating Adventures</li>
-                    <li style="color: #fbbc04">Fellow Commuters</li>
-                    <li style="color: #4285f4">Class Groups</li>
-                    <li style="color: #4285f4">Board Game Nights</li>
-                    <li style="color: #34a853">Dating Adventures</li>
+                    <li class="gradient-text-blue">Board Game Nights</li>
+                    <li class="gradient-text-green">Dating Adventures</li>
+                    <li class="gradient-text-yellow">Fellow Commuters</li>
+                    <li class="gradient-text-purple">Class Groups</li>
+                    <li class="gradient-text-blue">Board Game Nights</li>
+                    <li class="gradient-text-green">Dating Adventures</li>
                   </ul>
                 </div>
               </div>
@@ -63,48 +63,48 @@
                 <div class="scrolling-words-box">
                   <ul v-if="scroll1">
                     <li style="color: transparent">Athletics</li>
-                    <li style="color: #ea4335">Athletics</li>
-                    <li style="color: #4285f4">Basketball Pick-Up</li>
-                    <li style="color: #4285f4">Crew</li>
-                    <li style="color: #34a853">Soccer Fanatics</li>
-                    <li style="color: #fbbc04">Martial Arts Meetup</li>
-                    <li style="color: #4285f4">Badminton Club</li>
+                    <li class="gradient-text-green">Athletics</li>
+                    <li class="gradient-text-blue">Basketball Pick-Up</li>
+                    <li class="gradient-text-blue">Crew</li>
+                    <li class="gradient-text-yellow">Soccer Fanatics</li>
+                    <li class="gradient-text-purple">Martial Arts Meetup</li>
+                    <li class="gradient-text-red">Badminton Club</li>
                   </ul>
                   <ul v-if="scroll2">
                     <li style="color: transparent">Athletics</li>
-                    <li style="color: #ea4335">Academics</li>
-                    <li style="color: #4285f4">Study Buddies</li>
-                    <li style="color: #34a853">Startup</li>
-                    <li style="color: #34a853">Enthusiasts</li>
-                    <li style="color: #fbbc04">Course Explorers</li>
-                    <li style="color: #4285f4">Physics Study</li>
+                    <li class="gradient-text-green">Academics</li>
+                    <li class="gradient-text-blue">Study Buddies</li>
+                    <li class="gradient-text-yellow">Startup</li>
+                    <li class="gradient-text-yellow">Enthusiasts</li>
+                    <li class="gradient-text-purple">Course Explorers</li>
+                    <li class="gradient-text-red">Physics Study</li>
                   </ul>
                   <ul v-if="scroll3">
                     <li style="color: transparent">Athletics</li>
-                    <li style="color: #4285f4">Groups</li>
-                    <li style="color: #ea4335">Cultural</li>
-                    <li style="color: #4285f4">International</li>
-                    <li style="color: #4285f4">Students Comm</li>
-                    <li style="color: #34a853">Housing Comm</li>
-                    <li style="color: #fbbc04">Arts & Creativity</li>
+                    <li class="gradient-text-green">Groups</li>
+                    <li class="gradient-text-blue">Cultural</li>
+                    <li class="gradient-text-blue">International</li>
+                    <li class="gradient-text-yellow">Students Comm</li>
+                    <li class="gradient-text-purple">Housing Comm</li>
+                    <li class="gradient-text-red">Arts & Creativity</li>
                   </ul>
                   <ul v-if="scroll4">
                     <li style="color: transparent">Athletics</li>
-                    <li style="color: #4285f4">Kpop Enthusiasts</li>
-                    <li style="color: #ea4335">Dance Groups</li>
-                    <li style="color: #4285f4">Fun Groups</li>
-                    <li style="color: #fbbc04">Movie Buffs</li>
-                    <li style="color: #4285f4">Foodie Adventures</li>
-                    <li style="color: #ea4335">Travel Explorers</li>
+                    <li class="gradient-text-blue">Kpop Enthusiasts</li>
+                    <li class="gradient-text-green">Dance Groups</li>
+                    <li class="gradient-text-yellow">Fun Groups</li>
+                    <li class="gradient-text-purple">Movie Buffs</li>
+                    <li class="gradient-text-red">Foodie Adventures</li>
+                    <li class="gradient-text-green">Travel Explorers</li>
                   </ul>
                   <ul v-if="scroll5">
                     <li style="color: transparent">Athletics</li>
-                    <li style="color: #34a853">Gaming</li>
-                    <li style="color: #34a853">Enthusiasts</li>
-                    <li style="color: #4285f4">Board Game</li>
-                    <li style="color: #34a853">Dating Adventures</li>
-                    <li style="color: #fbbc04">Fellow Commuters</li>
-                    <li style="color: #4285f4">Class Groups</li>
+                    <li class="gradient-text-blue">Gaming</li>
+                    <li class="gradient-text-blue">Enthusiasts</li>
+                    <li class="gradient-text-yellow">Board Game</li>
+                    <li class="gradient-text-purple">Dating Adventures</li>
+                    <li class="gradient-text-red">Fellow Commuters</li>
+                    <li class="gradient-text-blue">Class Groups</li>
                   </ul>
                 </div>
               </div>
@@ -141,108 +141,123 @@
         </div>
       </b-col>
     </b-row>
-    <b-row align-h="center" class="space-content">
-      <b-col class="align-image-content">
-        <img
-          src="@/assets/img/Build Your Community (Compressed).gif"
-          class="image-content"
-        />
-      </b-col>
-      <b-col align-self="center">
-        <div class="text-tittle text-white">
-          <span>Discover Communities in your School</span>
-        </div>
-        <div class="desc-content">
-          <span>
-            May it be crypto, hockey, or mistery novels, there are always fellow
-            enthusiasts out there, and we help you find them and everything you
-            would want to know before you take the leap.
-          </span>
-        </div>
-      </b-col>
-    </b-row>
-    <b-row align-h="center" class="space-content reverse">
-      <b-col align-self="center">
-        <div class="text-tittle text-white">
-          <span class="text-white">Build your Community</span>
-        </div>
-        <div class="desc-content">
-          <span>
-            Reaching the right people is what makes a great community. Hudel
-            does the groundwork for you by directing people with shared
-            interests you way.
-          </span>
-        </div>
-      </b-col>
-      <b-col class="align-image-content">
-        <img
-          src="@/assets/img/Build Your Community (Compressed).gif"
-          class="image-content"
-        />
-      </b-col>
-    </b-row>
-    <b-row align-h="center" class="space-content">
-      <b-col class="align-image-content">
-        <img
-          src="@/assets/img/Chat and Announcement (Compressed).gif"
-          class="image-content"
-        />
-      </b-col>
-      <b-col align-self="center">
-        <div class="text-tittle text-white">
-          <span class="text-white"
-            >Stay in the loop with Chat, Announcement</span
-          >
-        </div>
-        <div class="desc-content">
-          <span>
-            Check out what your communities are up to from the announcements,
-            and get to know your fellow compadres once you join a community.
-          </span>
-        </div>
-      </b-col>
-    </b-row>
-    <b-row align-h="center" class="space-content reverse">
-      <b-col align-self="center">
-        <div class="text-tittle text-white">
-          <span class="text-white">Need for Feed</span>
-        </div>
-        <div class="desc-content">
-          <span>
-            Digging more obout what creates that spark in you made easy - choose
-            your interests, and Hudel gets you closer to what you're looking
-            for, may they be clubs, communities, or groups.
-          </span>
-        </div>
-      </b-col>
-      <b-col class="align-image-content">
-        <img
-          src="@/assets/img/Build Your Community (Compressed).gif"
-          class="image-content"
-        />
-      </b-col>
-    </b-row>
-    <b-row align-h="center" class="space-content">
-      <b-col class="align-image-content">
-        <img
-          src="@/assets/img/Explore Events (Compressed).gif"
-          class="image-content"
-        />
-      </b-col>
-      <b-col align-self="center">
-        <div class="text-tittle text-white">
-          <span class="text-white">Explore Events</span>
-        </div>
-        <div class="desc-content">
-          <span>
-            Whether it's pickup basketball on a Friday or an afternoon park
-            meetup with international students, Hudel keeps you in he loop with
-            events, and yes, that includes which of your friends who are already
-            in for it.
-          </span>
-        </div>
-      </b-col>
-    </b-row>
+    <FadeInLeft scrollThreshold="900">
+      <b-row align-h="center" class="space-content">
+        <b-col class="align-image-content">
+          <img
+            src="@/assets/img/Discover Communities.gif"
+            class="image-content"
+          />
+        </b-col>
+        <b-col align-self="center">
+          <div class="text-tittle text-white">
+            <span>Discover Communities in your School</span>
+          </div>
+          <div class="desc-content">
+            <span>
+              May it be crypto, hockey, or mistery novels, there are always
+              fellow enthusiasts out there, and we help you find them and
+              everything you would want to know before you take the leap.
+            </span>
+          </div>
+        </b-col>
+      </b-row>
+    </FadeInLeft>
+
+    <FadeInRight scrollThreshold="1800">
+      <b-row align-h="center" class="space-content reverse">
+        <b-col align-self="center">
+          <div class="text-tittle text-white">
+            <span class="text-white">Build your Community</span>
+          </div>
+          <div class="desc-content">
+            <span>
+              Reaching the right people is what makes a great community. Hudel
+              does the groundwork for you by directing people with shared
+              interests you way.
+            </span>
+          </div>
+        </b-col>
+        <b-col class="align-image-content">
+          <img
+            src="@/assets/img/Build Your Community (Compressed).gif"
+            class="image-content"
+          />
+        </b-col>
+      </b-row>
+    </FadeInRight>
+
+    <FadeInLeft scrollThreshold="2600">
+      <b-row align-h="center" class="space-content">
+        <b-col class="align-image-content">
+          <img
+            src="@/assets/img/Chat and Announcement (Compressed).gif"
+            class="image-content"
+          />
+        </b-col>
+        <b-col align-self="center">
+          <div class="text-tittle text-white">
+            <span class="text-white"
+              >Stay in the loop with Chat, Announcement</span
+            >
+          </div>
+          <div class="desc-content">
+            <span>
+              Check out what your communities are up to from the announcements,
+              and get to know your fellow compadres once you join a community.
+            </span>
+          </div>
+        </b-col>
+      </b-row>
+    </FadeInLeft>
+
+    <FadeInRight scrollThreshold="3400">
+      <b-row align-h="center" class="space-content reverse">
+        <b-col align-self="center">
+          <div class="text-tittle text-white">
+            <span class="text-white">Need for Feed</span>
+          </div>
+          <div class="desc-content">
+            <span>
+              Digging more obout what creates that spark in you made easy -
+              choose your interests, and Hudel gets you closer to what you're
+              looking for, may they be clubs, communities, or groups.
+            </span>
+          </div>
+        </b-col>
+        <b-col class="align-image-content">
+          <img
+            src="@/assets/img/Build Your Community (Compressed).gif"
+            class="image-content"
+          />
+        </b-col>
+      </b-row>
+    </FadeInRight>
+
+    <FadeInLeft scrollThreshold="4200">
+      <b-row align-h="center" class="space-content">
+        <b-col class="align-image-content">
+          <img
+            src="@/assets/img/Explore Events (Compressed).gif"
+            class="image-content"
+          />
+        </b-col>
+        <b-col align-self="center">
+          <div class="text-tittle text-white">
+            <span class="text-white">Explore Events</span>
+          </div>
+          <div class="desc-content">
+            <span>
+              Whether it's pickup basketball on a Friday or an afternoon park
+              meetup with international students, Hudel keeps you in he loop
+              with events, and yes, that includes which of your friends who are
+              already in for it.
+            </span>
+          </div>
+        </b-col>
+      </b-row>
+    </FadeInLeft>
+
     <b-row align-h="center" class="space-button">
       <b-col class="text-center">
         <button class="btn text-white btn-exclusive">
@@ -275,6 +290,9 @@
 </template>
 
 <script>
+import FadeInLeft from "@/components/AnimationFadeLeft.vue";
+import FadeInRight from "@/components/AnimationFadeRight.vue";
+
 export default {
   name: "content",
   data() {
@@ -286,10 +304,30 @@ export default {
       scroll5: false,
     };
   },
+  components: {
+    FadeInLeft,
+    FadeInRight,
+  },
   async created() {
     await this.handleScroll();
   },
-  computed: {},
+  mounted() {
+    // Add a scroll event listener to trigger the animation on the first scroll
+    const element = this.$el;
+
+    window.addEventListener("scroll", () => {
+      if (!element.classList.contains("fade-in-left-active")) {
+        const rect = element.getBoundingClientRect();
+        const viewportHeight =
+          window.innerHeight || document.documentElement.clientHeight;
+
+        // Check if the element is in the viewport and not already animated
+        if (rect.top < viewportHeight) {
+          element.classList.add("fade-in-left-active");
+        }
+      }
+    });
+  },
   methods: {
     handleScroll() {
       this.scroll1 = true;
@@ -331,6 +369,46 @@ export default {
 </script>
 
 <style>
+.gradient-text-green {
+  background-image: linear-gradient(to right, #16ff20, #009206);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  /* Other text styling properties */
+}
+
+.gradient-text-blue {
+  background-image: linear-gradient(to right, #3971ff, #67008b);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  /* Other text styling properties */
+}
+
+.gradient-text-yellow {
+  background-image: linear-gradient(to right, #ffc700, #ff3d00);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  /* Other text styling properties */
+}
+
+.gradient-text-purple {
+  background-image: linear-gradient(to right, #b10bff, #55007c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  /* Other text styling properties */
+}
+
+.gradient-text-red {
+  background-image: linear-gradient(to right, #ff922e, #7e0000);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  /* Other text styling properties */
+}
+
 .image-bottom {
   width: 100%;
   height: 475px;
@@ -449,6 +527,17 @@ export default {
   }
 }
 
+.fade-in-left {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in-left-active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 .image-find {
   width: 600px;
 }
@@ -494,14 +583,14 @@ export default {
 }
 
 .space-content {
-  margin-top: 300px;
-  margin-bottom: 300px;
+  margin-top: 100px;
+  margin-bottom: 100px;
   margin-left: 74px;
   margin-right: 74px;
 }
 
 .image-content {
-  height: 600px;
+  height: 1250px;
 }
 
 .image-mascot-content-build {
@@ -553,7 +642,8 @@ export default {
     width: 250px;
   }
   .image-content {
-    height: 350px;
+    height: 600px;
+    object-position: -5px 150px;
   }
   .text-tittle-find {
     font-size: 32px;
@@ -581,8 +671,8 @@ export default {
     text-align: center;
   }
   .space-content {
-    margin-top: 200px;
-    margin-bottom: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     margin-left: 30px;
     margin-right: 30px;
   }
@@ -607,13 +697,13 @@ export default {
   }
 
   .space-button {
-    margin-top: 200px;
+    margin-top: 250px;
     margin-bottom: 48px;
     margin-left: 30px;
     margin-right: 30px;
   }
   .space-btn {
-    margin-bottom: 200px;
+    margin-bottom: 250px;
     margin-left: 30px;
     margin-right: 30px;
   }

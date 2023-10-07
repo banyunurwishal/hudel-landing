@@ -4,7 +4,7 @@
       <b-col class="text-center">
         <img src="@/assets/img/Excited.png" class="image-blog" />
         <div class="space-blog-top">
-          <span class="text-white">Hang Tight, We're </span>
+          <span class="text-white text-blog">Hang Tight, We're </span>
           <br />
           <span class="text-white desc-blog">
             <span style="color: #6638ff !important">Upgrading</span>!
@@ -25,6 +25,14 @@
 }
 .desc-blog {
   font-size: 48px;
+}
+.blog-wrapper {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.space-blog-nav {
+  margin-top: 150px;
+  margin-bottom: 150px;
 }
 @media only screen and (max-width: 430px) {
   .blog-wrapper {
