@@ -1,6 +1,6 @@
 <template>
   <div class="space-footer">
-    <b-row class="text-center" style="margin-bottom: 60px" align-h="center">
+    <b-row class="text-center footer-nav" align-h="center">
       <b-col class="width-footer" sm="1">
         <a
           @click="handleChangePage('/')"
@@ -9,7 +9,7 @@
               ? 'color:#430BFF !important;font-weight: bold;'
               : ''
           "
-          class="pointer text-decoration-none text-light text-list"
+          class="pointer text-decoration-none text-light text-footer-mobile"
           >Home</a
         >
       </b-col>
@@ -21,7 +21,7 @@
               ? 'color:#430BFF !important;font-weight: bold;'
               : ''
           "
-          class="pointer text-decoration-none text-light text-list"
+          class="pointer text-decoration-none text-light text-footer-mobile"
           >Legal</a
         >
       </b-col>
@@ -33,7 +33,7 @@
               ? 'color:#430BFF !important;font-weight: bold;'
               : ''
           "
-          class="pointer text-decoration-none text-light text-list"
+          class="pointer text-decoration-none text-light text-footer-mobile"
           >Blog</a
         ></b-col
       >
@@ -45,15 +45,15 @@
               ? 'color:#430BFF !important;font-weight: bold;'
               : ''
           "
-          class="pointer text-decoration-none text-light text-list"
+          class="pointer text-decoration-none text-light text-footer-mobile"
           >Community</a
         ></b-col
       >
     </b-row>
-    <b-row class="text-white">
-      <b-col cols="12" md="10" xl="9">
-        <b-row>
-          <b-col>
+    <b-row class="text-white wrapper-footer-desc">
+      <b-col class="width-mobile-footer" cols="12" md="12" xl="9">
+        <b-row class="footer-desc">
+          <b-col cols="12" md="12" lg="6">
             <div class="space-content-footer">
               <span class="text-cr"
                 ><img src="@/assets/icons/mail.svg" />
@@ -68,7 +68,7 @@
               >
             </div>
           </b-col>
-          <b-col>
+          <b-col cols="12" md="12" lg="6">
             <div class="space-content-footer">
               <span class="text-cr"
                 ><img src="@/assets/icons/phone.svg" /> +1 123 123 123 123</span
@@ -110,19 +110,6 @@ export default {
 </script>
 
 <style>
-ul.horizontal-footer {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden; /* Hide overflowing content */
-}
-
-/* Style for the list items (li) */
-ul.horizontal-footer li {
-  float: left; /* Float the list items to make them horizontal */
-  margin-right: 10px; /* Add some spacing between list items */
-}
-
 .space-footer {
   padding-top: 60px;
   padding-bottom: 122px;
@@ -134,13 +121,23 @@ ul.horizontal-footer li {
 
 .text-cr {
   font-size: 24px;
+  font-weight: 500;
+  line-height: 62px;
+  text-align: center;
 }
 .text-cr img {
   margin-bottom: 5px;
   margin-right: 4px;
 }
+.footer-nav {
+  margin-bottom: 60px;
+}
 
-@media only screen and (max-width: 500px) {
+.text-footer-mobile {
+  font-size: 24px;
+}
+
+@media only screen and (max-width: 430px) {
   .space-footer {
     padding-top: 30px;
     padding-bottom: 61px;
@@ -151,18 +148,66 @@ ul.horizontal-footer li {
   }
 
   .width-footer {
-    width: 50%;
+    width: fit-content;
     margin-bottom: 8px;
     margin-top: 8px;
+  }
+
+  .text-footer-mobile {
+    font-size: 16px;
   }
 
   .text-cr {
     font-size: 16px;
   }
   .text-cr img {
-    height: 16px;
+    height: 22px;
     margin-bottom: 5px;
     margin-right: 4px;
+  }
+
+  .footer-nav {
+    justify-content: space-between !important;
+    margin-bottom: 32px;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .wrapper-footer-desc {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 820px) {
+  .width-footer {
+    width: fit-content !important;
+    flex: fit-content !important;
+    max-width: fit-content !important;
+  }
+
+  .text-cr {
+    font-size: 16px;
+  }
+  .text-cr img {
+    height: 24px;
+    margin-bottom: 5px;
+    margin-right: 4px;
+  }
+
+  .text-footer-mobile {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1440px) {
+  .width-footer {
+    width: fit-content !important;
+    flex: fit-content !important;
+    max-width: fit-content !important;
+  }
+
+  .text-footer-mobile {
+    font-size: 24px;
   }
 }
 </style>

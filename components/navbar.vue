@@ -2,7 +2,7 @@
   <b-navbar toggleable="lg" type="dark">
     <b-navbar-brand>
       <a
-        class="navbar-brand pointer text-navbar"
+        class="navbar-brand pointer text-navbar animate__fadeInUp animate__animated animate__slow"
         @click="handleChangePage('/')"
       >
         <img
@@ -19,7 +19,10 @@
       <!-- Right aligned nav items -->
       <b-navbar-nav class="ml-auto">
         <ul class="horizontal-list">
-          <li class="pointer" @click="handleChangePage('/')">
+          <li
+            class="pointer animate__fadeIn animate__animated animate__slow"
+            @click="handleChangePage('/')"
+          >
             <a
               :style="
                 this.$route.path == '/'
@@ -30,7 +33,10 @@
               >Home</a
             >
           </li>
-          <li class="pointer" @click="handleChangePage('/legal')">
+          <li
+            class="pointer animate__fadeIn animate__animated animate__slow"
+            @click="handleChangePage('/legal')"
+          >
             <a
               :style="
                 this.$route.path == '/legal'
@@ -41,7 +47,10 @@
               >Legal</a
             >
           </li>
-          <li class="pointer" @click="handleChangePage('/blog')">
+          <li
+            class="pointer animate__fadeIn animate__animated animate__slow"
+            @click="handleChangePage('/blog')"
+          >
             <a
               :style="
                 this.$route.path == '/blog'
@@ -52,7 +61,10 @@
               >Blog</a
             >
           </li>
-          <li class="pointer" @click="handleChangePage('/community')">
+          <li
+            class="pointer animate__fadeIn animate__animated animate__slow"
+            @click="handleChangePage('/community')"
+          >
             <a
               :style="
                 this.$route.path == '/community'
@@ -119,21 +131,6 @@ ul.horizontal-list li {
   font-family: "Inter", sans-serif;
 }
 
-@media only screen and (min-width: 768px) {
-  /* Style for the horizontal ul */
-  ul.horizontal-list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden; /* Hide overflowing content */
-  }
-
-  /* Style for the list items (li) */
-  ul.horizontal-list li {
-    float: left; /* Float the list items to make them horizontal */
-    margin-right: 10px; /* Add some spacing between list items */
-  }
-}
 @media only screen and (max-width: 500px) {
   .style-logo {
     width: 48px;
@@ -161,6 +158,60 @@ ul.horizontal-list li {
 }
 
 @media only screen and (max-width: 430px) {
+  .style-logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  .text-navbar {
+    font-size: 32px;
+  }
+
+  ul.horizontal-list {
+    margin-bottom: 8px;
+  }
+
+  /* Style for the list items (li) */
+  ul.horizontal-list li {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  .text-list {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 820px) {
+  .style-logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  .text-navbar {
+    font-size: 32px;
+  }
+
+  ul.horizontal-list {
+    list-style-type: none;
+    overflow: visible;
+    margin-bottom: 8px;
+  }
+
+  /* Style for the list items (li) */
+  ul.horizontal-list li {
+    float: none;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  .text-list {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1440px) {
   .style-logo {
     width: 48px;
     height: 48px;
