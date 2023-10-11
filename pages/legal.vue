@@ -10,20 +10,20 @@
           >
         </div>
         <b-row class="my-2">
-          <b-col class="my-2">
+          <b-col cols="12" sm="6" class="my-2">
             <button class="btn btn-block text-button">
               Terms and Conditions
             </button>
           </b-col>
-          <b-col class="my-2">
+          <b-col cols="12" md="6" class="my-2">
             <button class="btn btn-block text-button">Privacy Policy</button>
           </b-col>
         </b-row>
         <b-row class="my-2">
-          <b-col class="my-2">
+          <b-col cols="12" md="6" class="my-2">
             <button class="btn btn-block text-button">Disclaimer</button>
           </b-col>
-          <b-col class="my-2">
+          <b-col cols="12" md="6" class="my-2">
             <button class="btn btn-block text-button">
               Community Guidelines
             </button>
@@ -102,17 +102,17 @@
 
 @media only screen and (min-width: 768px) and (max-width: 820px) {
   .legal-wrapper {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 80px;
+    margin-right: 80px;
   }
 
   .space-legal-top {
-    margin-top: 240px;
-    margin-bottom: 240px;
+    margin-top: 250px;
+    margin-bottom: 250px;
   }
 
   .text-button {
-    font-size: 14px;
+    font-size: 24px;
     font-weight: 500;
     color: #170d41;
     background: #eaeaea;
@@ -126,10 +126,10 @@
   }
 
   .text-legal {
-    font-size: 24px;
+    font-size: 42px;
   }
   .desc-legal {
-    font-size: 14px;
+    font-size: 24px;
   }
 }
 
@@ -137,6 +137,39 @@
   .legal-wrapper {
     margin-left: 300px;
     margin-right: 300px;
+  }
+
+  .space-legal-top {
+    margin-top: 250px;
+    margin-bottom: 250px;
+  }
+
+  .text-button {
+    font-size: 24px;
+    font-weight: 500;
+    color: #170d41;
+    background: #eaeaea;
+    padding: 15px;
+    border-radius: 23.6px;
+    gap: 7.87px;
+  }
+
+  .space-legal-mid {
+    margin-bottom: 32px;
+  }
+
+  .text-legal {
+    font-size: 48px;
+  }
+  .desc-legal {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1180px) {
+  .legal-wrapper {
+    margin-left: 200px;
+    margin-right: 200px;
   }
 
   .space-legal-top {

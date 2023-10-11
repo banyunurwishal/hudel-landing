@@ -235,4 +235,29 @@ ul.horizontal-list li {
     font-size: 24px;
   }
 }
+
+@media only screen and (min-width: 1024px) and (max-width: 1180px) {
+  .style-logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  .text-navbar {
+    font-size: 32px;
+  }
+
+  ul.horizontal-list {
+    margin-bottom: 8px;
+  }
+
+  /* Style for the list items (li) */
+  ul.horizontal-list li {
+    margin-top: 24px;
+    margin-bottom: 8px;
+  }
+
+  .text-list {
+    font-size: 24px;
+  }
+}
 </style>

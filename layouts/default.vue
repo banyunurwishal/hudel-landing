@@ -95,4 +95,20 @@ body {
     padding-right: 70px;
   }
 }
+
+@media only screen and (min-width: 1024px) and (max-width: 1180px) {
+  .navbar-wrapper {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .main-wrapper {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+
+  .footer-wrapper {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
 </style>

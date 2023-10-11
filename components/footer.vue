@@ -197,9 +197,29 @@ export default {
   .text-footer-mobile {
     font-size: 24px;
   }
+  .space-footer {
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
 }
 
 @media only screen and (min-width: 1366px) and (max-width: 1440px) {
+  .width-footer {
+    width: fit-content !important;
+    flex: fit-content !important;
+    max-width: fit-content !important;
+  }
+
+  .text-footer-mobile {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1180px) {
+  .space-footer {
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
   .width-footer {
     width: fit-content !important;
     flex: fit-content !important;
