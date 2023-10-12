@@ -30,7 +30,7 @@ body {
   background-color: #12083a;
   background-image: url("@/assets/img/Hudel Gradient Background PNG.png");
   background-repeat: no-repeat;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter";
 }
 
 .navbar-wrapper {
@@ -64,7 +64,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 820px) {
+@media only screen and (min-width: 768px) and (max-width: 850px) {
   .navbar-wrapper {
     margin-left: 60px;
     margin-right: 60px;

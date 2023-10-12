@@ -182,7 +182,7 @@ ul.horizontal-list li {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 820px) {
+@media only screen and (min-width: 768px) and (max-width: 850px) {
   .style-logo {
     width: 48px;
     height: 48px;

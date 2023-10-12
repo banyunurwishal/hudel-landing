@@ -100,7 +100,7 @@
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 820px) {
+@media only screen and (min-width: 768px) and (max-width: 850px) {
   .legal-wrapper {
     margin-left: 80px;
     margin-right: 80px;

@@ -506,7 +506,7 @@ export default {
 
 .text-tittle-find {
   font-size: 57px;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 44px;
 }
 
@@ -679,7 +679,7 @@ export default {
   }
   .text-tittle-find {
     font-size: 32px;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 20px;
   }
   .responsive-text-startup1-animation {
@@ -805,7 +805,7 @@ export default {
   }
   .text-tittle-find {
     font-size: 42px;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 44px;
   }
   .space-top {
@@ -932,7 +932,7 @@ export default {
   }
   .text-tittle-find {
     font-size: 32px;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 32px;
   }
   .space-top {
@@ -1023,7 +1023,7 @@ export default {
     margin-top: 150px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 820px) {
+@media only screen and (min-width: 768px) and (max-width: 850px) {
   .responsive-text-startup2-animation {
     display: block;
   }
@@ -1058,15 +1058,15 @@ export default {
     text-align: center;
   }
   .image-find {
-    width: 475px;
+    width: 500px;
   }
   .image-content {
     height: 1000px;
-    object-position: -5px 150px;
+    object-position: -5px 200px;
   }
   .text-tittle-find {
     font-size: 42px;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 20px;
   }
   .responsive-text-startup1-animation {
