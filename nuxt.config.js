@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "hudel",
+    title: "Hudel",
     htmlAttrs: {
       lang: "en",
     },
@@ -12,7 +12,7 @@ export default {
       { name: "format-detection", content: "telephone=no" },
     ],
     link: [
-      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+      { rel: "icon", type: "image/png", href: "logo.png" },
       {
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css?family=Poppins",
