@@ -776,6 +776,127 @@ export default {
   }
 }
 
+@media only screen and (min-width: 1280px) and (max-width: 1290px) {
+  .text-form-label {
+    font-size: 18px;
+  }
+  .scrolling-words-box {
+    height: 5rem;
+  }
+  .scrolling-words-box ul {
+    margin: 0 0.625rem;
+  }
+  .scrolling-words-box ul li {
+    height: 5rem;
+  }
+  .image-mascot-content-build {
+    height: 200px;
+  }
+
+  .align-image-mascot1 {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .image-find {
+    width: 500px;
+  }
+  .image-content {
+    height: 1000px;
+  }
+  .text-tittle-find {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 44px;
+  }
+  .space-top {
+    margin-top: 100px;
+  }
+  .space-school {
+    margin-bottom: 24px;
+  }
+  .form-univ {
+    width: 62.5% !important;
+    border-radius: 16px !important;
+    height: 50px !important;
+  }
+  .align-image-top {
+    text-align: center;
+  }
+  .space-content {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 74px;
+    margin-right: 74px;
+  }
+  .text-tittle {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: -1.6164875030517578px;
+    margin-bottom: 50px;
+  }
+
+  .desc-content {
+    font-size: 24px;
+    font-family: Poppins;
+    color: #bdbdbd !important;
+    font-weight: 500;
+  }
+
+  .reverse {
+    flex-wrap: wrap-reverse;
+  }
+
+  .space-button {
+    margin-top: 150px;
+    margin-bottom: 48px;
+    margin-left: 74px;
+    margin-right: 74px;
+  }
+  .space-btn {
+    margin-bottom: 250px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .btn-exclusive {
+    padding: 20px !important;
+    border-radius: 25px !important;
+    gap: 10px !important;
+  }
+
+  .text-btn-exclusive {
+    font-size: 24px !important;
+  }
+
+  .text-hudel-ing {
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 80px;
+  }
+
+  .text-hudel-ing-rally {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 53px;
+    letter-spacing: -1.0443679094314575px;
+    text-align: center;
+    color: #bdbdbd;
+  }
+
+  .image-bottom {
+    width: 100%;
+    height: 475px;
+    object-fit: cover;
+    object-position: -20% -60%;
+  }
+
+  .space-bottom {
+    margin-top: 150px;
+  }
+}
+
 @media only screen and (min-width: 1366px) and (max-width: 1440px) {
   .text-form-label {
     font-size: 18px;

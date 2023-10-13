@@ -162,6 +162,7 @@ export default {
   }
   .text-cr img {
     height: 22px;
+    width: 22px;
     margin-bottom: 5px;
     margin-right: 4px;
   }
@@ -176,6 +177,9 @@ export default {
     margin-left: 0 !important;
     margin-right: 0 !important;
   }
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1290px) {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 850px) {

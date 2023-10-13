@@ -182,6 +182,31 @@ ul.horizontal-list li {
   }
 }
 
+@media only screen and (min-width: 1280px) and (max-width: 1290px) {
+  .style-logo {
+    width: 42px;
+    height: 42px;
+    vertical-align: middle !important;
+  }
+
+  .text-navbar {
+    font-size: 22px;
+  }
+
+  ul.horizontal-list {
+    margin-bottom: 8px;
+  }
+
+  /* Style for the list items (li) */
+  ul.horizontal-list li {
+    margin-top: 8px;
+  }
+
+  .text-list {
+    font-size: 22px;
+  }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 850px) {
   .style-logo {
     width: 48px;

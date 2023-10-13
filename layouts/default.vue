@@ -49,6 +49,22 @@ body {
   background: linear-gradient(180deg, #261a59 0%, #12083a 100%);
 }
 
+@media only screen and (min-width: 1280px) and (max-width: 1290px) {
+  .navbar-wrapper {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  .main-wrapper {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+
+  .footer-wrapper {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
+
 @media only screen and (max-width: 430px) {
   .navbar-wrapper {
     margin-left: 25px;
